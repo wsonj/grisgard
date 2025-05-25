@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Grisgard Labs</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #86b649;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: white;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .banner {
+      width: 150px;
+      height: auto;
+      position: absolute;
+      top: -30px;
+      left: 200px;
+    }
+
+    .contact-button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      font-size: 17px;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 200px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .contact-button:hover {
+      background-color: #86b649;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      line-height: 1.2;
+      margin: 200px 0 10px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .separator {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.25);
+      z-index: 9;
+    }
+
+    .subtext {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+      margin-bottom: 150px;
+    }
+
+    /* Vertical line style */
+    .vertical-line {
+      width: 2px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.25);
+      margin: 0 auto;
+      position: relative;
+      top: -80px;
+      z-index: 0;
+    }
+
+    /* Styles for "What We Do" and "Behind Grisgard Labs" sections */
+    .section-title {
+      font-size: 32px;
+      color: #333;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 110px;
+    }
+
+    .card {
+      width: 300px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 50%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      color: #86b649;
+      margin-bottom: 15px;
+    }
+
+    .card-content {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .about-content {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    /* Sign-off styling */
+    .sign-off {
+      font-size: 16px;
+      color: #555;
+      text-align: center;
+      font-style: italic;
+    }
+
+    /* Contact section styling */
+    .contact-section {
+      text-align: center;
+      margin: 100px 0;
+    }
+
+    .contact-section h2 {
+      font-size: 28px;
+      color: #333;
+    }
+
+    .contact-wide-button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    .contact-wide-button:hover {
+      background-color: #86b649;
+    }
+
+    /* Fade-in effect */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="banner.png" alt="Banner" class="banner">
+    </a>
+    <a href="mailto:wilson.huang@queensu.ca" class="contact-button">Contact</a>
+  </header>
+  <div class="separator"></div>
+
+  <main>
+    <!-- Landing Section -->
+    <h1 class="fade-in-section">Grow Your Business with Targeted Leads<br>and a Strong Social Presence 🌱</h1>
+    <p class="subtext fade-in-section">Scroll down to discover how we can help you grow</p>
+    
+    <!-- Centered Vertical Line Below the Landing Section -->
+    <div class="vertical-line fade-in-section"></div>
+
+    <!-- "What We Do" section -->
+    <section class="fade-in-section">
+      <h2 class="section-title">What We Do</h2>
+      <div class="services">
+        <!-- Lead Sourcing and Prospect Outreach Card -->
+        <div class="card">
+          <img src="lead gen img.png" alt="Lead Sourcing and Prospect Outreach Image">
+          <h3 class="card-title">Lead Sourcing and Prospect Outreach</h3>
+          <p class="card-content">
+            Building a list of potential clients through targeted lead sourcing and connecting with them through tailored outreach, helping you find and engage the right audience.
+          </p>
+        </div>
+        
+        <!-- Social Media Brand Optimization Card -->
+        <div class="card">
+          <img src="social media img.png" alt="Social Media Brand Optimization Image">
+          <h3 class="card-title">Social Media Brand Optimization</h3>
+          <p class="card-content">Enhancing your online presence with strategies focused on brand image, engagement, and audience growth, helping your brand shine.</p>
+        </div>
+        
+        <!-- Master Guidebook & Resources Card -->
+        <div class="card">
+          <img src="guidebook img.png" alt="Master Guidebook & Resources Image">
+          <h3 class="card-title">Master Guidebook & Resources</h3>
+          <p class="card-content">Comprehensive resources covering everything you need to succeed in growing your business.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Behind Grisgard Labs Section -->
+    <section class="fade-in-section">
+      <h2 class="section-title">Behind Grisgard Labs</h2>
+      <p class="about-content">
+        Grisgard Labs was founded on practical, hands-on experience. Prior to launching the agency, I worked as a product strategy, management, and design intern at a startup, where I supported go-to-market planning, competitive analysis, and user-centred product development. My background in market research and certification in Google Analytics further shaped my data-driven approach to marketing.
+      </p>
+
+      <p class="about-content">
+        I am currently pursuing a degree in Business Technology at Queen’s University in Canada, with a focus on the intersection of business, marketing, and technology. Grisgard Labs supported early-stage teams through lead sourcing, outbound prospecting, and social media optimization, delivering marketing solutions that were focused, actionable, and results-oriented.
+      </p>
+
+      <p class="about-content">
+        Grisgard Labs operated from February 2024 to January 2025 and has since concluded its services.
+      </p>
+      <p class="sign-off">– Wilson H.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section fade-in-section">
+      <h2>Ready to work with us? Or got a question?</h2>
+      <a href="mailto:wilson.huang@queensu.ca" class="contact-wide-button">Contact</a>
+    </section>
+
+  </main>
+
+  <script>
+    // IntersectionObserver for fade-in effect
+    const faders = document.querySelectorAll('.fade-in-section');
+    const options = { threshold: 0.2 };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    faders.forEach(fader => observer.observe(fader));
+  </script>
+</body>
+</html>
